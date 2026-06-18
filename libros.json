@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "titulo": "El Principito",
+    "autor": "Antoine de Saint-Exupéry"
+  },
+  {
+    "id": 2,
+    "titulo": "Don Quijote de la Mancha",
+    "autor": "Miguel de Cervantes"
+  },
+  {
+    "id": 3,
+    "titulo": "Cien años de Soledad",
+    "autor": "Gabriel García Márquez"
+  },
+  {
+    "id": 4,
+    "titulo": "Pedro Páramo",
+    "autor": "Juan Rulfo"
+  },
+  {
+    "id": 5,
+    "titulo": "La Casa de los Espíritus",
+    "autor": "Isabel Allende"
+  }
+]

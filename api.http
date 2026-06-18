@@ -1,0 +1,25 @@
+### Obtener todos los libros
+GET http://localhost:3000/libros
+
+### Obtener un libro por ID
+GET http://localhost:3000/libros/1
+
+### Crear un nuevo libro
+POST http://localhost:3000/libros
+Content-Type: application/json
+
+{
+    "titulo": "Harry Potter y la Piedra Filosofal",
+    "autor": "J.K. Rowling"
+}
+
+### Actualizar un libro
+PUT http://localhost:3000/libros/1
+Content-Type: application/json
+
+{
+    "titulo": "El Principito (Edición Revisada)"
+}
+
+### Eliminar un libro
+DELETE http://localhost:3000/libros/11

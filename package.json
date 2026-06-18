@@ -1,0 +1,17 @@
+{
+  "name": "taller-api-rest",
+  "version": "1.0.0",
+  "description": "Taller API Rest con Node y Express",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
