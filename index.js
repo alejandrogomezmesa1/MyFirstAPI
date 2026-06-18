@@ -12,6 +12,11 @@ const FILE_PATH = path.join(__dirname, 'bd.json');
 
 app.use(express.json());
 
+const MostrarInicio = () => {
+    return ({ message: 'Bienvenido a la API de Libros' });
+}
+
+
 // Función auxiliar para leer el archivo JSON
 const leerDatos = async () => {
     try {
@@ -35,6 +40,11 @@ const guardarDatos = async (datos) => {
 // 1. Endpoint básico: Obtener todos los libros (GET)
 app.get('/libros', async (req, res) => {
     const libros = await leerDatos();
+    res.json(libros);
+});
+
+app.get('/', async (req, res) => {
+    const libros = await MostrarInicio();
     res.json(libros);
 });
 
