@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const FILE_PATH = path.join(__dirname, 'bd.json');
+const FILE_PATH = path.join(__dirname, 'libros.json');
 
 app.use(express.json());
 
