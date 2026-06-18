@@ -13,11 +13,19 @@ const FILE_PATH = path.join(__dirname, 'bd.json');
 app.use(express.json());
 
 const MostrarInicio = () => {
-    return ({ message: 'Bienvenido a la API de Libros' });
+    return { 
+        mensaje: '¡Hola! Bienvenido a la API de Libros',
+        descripcion: 'Esta API permite gestionar un catálogo de libros.',
+        rutas_disponibles: {
+            "GET /libros": "Obtiene la lista completa de libros.",
+            "GET /libros/:id": "Obtiene los detalles de un libro específico usando su ID.",
+            "POST /libros": "Crea un nuevo libro (requiere 'titulo' y 'autor' en formato JSON).",
+            "PUT /libros/:id": "Actualiza la información de un libro existente por su ID.",
+            "DELETE /libros/:id": "Elimina un libro del catálogo por su ID."
+        }
+    };
 }
 
-
-// Función auxiliar para leer el archivo JSON
 const leerDatos = async () => {
     try {
         const data = await fs.readFile(FILE_PATH, 'utf-8');
